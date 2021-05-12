@@ -36,4 +36,4 @@ root                    (project root folder)
 ## Authors
 ---
 * TODO: Add your names and emails here
-* Hunter Powell- pow16007@byui.edu hello world
+* Hunter Powell- pow16007@byui.edu 
