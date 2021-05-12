@@ -37,3 +37,4 @@ root                    (project root folder)
 ---
 * TODO: Add your names and emails here
 * Hunter Powell- pow16007@byui.edu 
+* Joseph Hampton- jshampton6@gmail.com
