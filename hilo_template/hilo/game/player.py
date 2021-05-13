@@ -1,1 +1,5 @@
-#this is to see if this works
+class player:
+    def do_guess(self):
+        pass
+    def is_hilo(self):
+        pass
