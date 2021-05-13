@@ -4,7 +4,7 @@ import random
 class Dealer:
     def __init__(self):
         self.keep_playing = True
-        self.score = 300
+        self.score = 75
         self.cards = []
         self.player = Player()
 
@@ -30,8 +30,14 @@ class Dealer:
         print(f"The next card was: {self.cards[1]}")
         print(f"Your score: {self.score}")
         del self.cards[0]
-        choice = input("Keep playing? [y/n] ")
-        if choice == 'n' or self.score <= 0:
+        if self.score <= 0:
             self.keep_playing = False
-            print("Thanks for Playing")
+            print("Game Over! Thanks for Playing")
+        else:
+            choice = input("Keep playing? [y/n] ")
+            if choice == 'n':
+                print("Thanks for Playing")
+                self.keep_playing = False
+            
+            
 
