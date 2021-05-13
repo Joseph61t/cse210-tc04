@@ -31,6 +31,7 @@ class Dealer:
         print(f"Your score: {self.score}")
         del self.cards[0]
         choice = input("Keep playing? [y/n] ")
-        if choice == 'n':
+        if choice == 'n' or self.score <= 0:
             self.keep_playing = False
+            print("Thanks for Playing")
 
