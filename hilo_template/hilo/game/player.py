@@ -1,4 +1,5 @@
-class player:
+
+class Player:
     #do guess only allows h or l and repeats if invalid answer given
 <<<<<<< HEAD
     def __init__(self) -> None:
