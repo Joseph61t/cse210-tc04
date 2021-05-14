@@ -4,7 +4,7 @@ import random
 class Dealer:
     def __init__(self):
         self.keep_playing = True
-        self.score = 75
+        self.score = 300
         self.cards = []
         self.player = Player()
         self.choice = ''
