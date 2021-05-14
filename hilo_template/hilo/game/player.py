@@ -1,5 +1,7 @@
 class player:
     #do guess only allows h or l and repeats if invalid answer given
+    def __init__(self) -> None:
+        pass
     def do_guess(self):
         while True:
             guess = input("Higher or Lower? [h/l]: ")
