@@ -7,6 +7,7 @@ class Dealer:
         self.score = 75
         self.cards = []
         self.player = Player()
+        self.choice = ''
 
     def draw_card(self):
         return random.randint(1,13)
@@ -22,9 +23,16 @@ class Dealer:
             self.cards.append(self.draw_card())
             self.playing()
             self.display()
+            #self.is_playing()
+
 
     def playing(self):
         self.score_count(self.player.is_hilo(self.cards[0], self.cards[1]))
+
+    def is_playing(self):
+        self.choice =  input('Keep playing? [y/n] ')
+        if self.choice == 'n':
+            self.keep_playing = False
    
     def display(self):
         print(f"The next card was: {self.cards[1]}")
